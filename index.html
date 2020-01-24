@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的商城</title>
+<style>
+body {
+	background-color:yellow;
+}
+#taoge {
+	width:730px;
+	height:330px;
+	backgroundcolor:#ccc;
+	margin-top:200px;
+	background-image:url(%E4%B8%8B%E8%BD%BD.jfif)
+}
+
+input {
+	width:160px;
+	background-color:pink;
+	margin-left:80%;
+	margin-top:100px;
+	height:50px;
+	font-size:30px;
+}
+</style>
+<script type="text/javascript">
+function denglu() {
+	var loading=prompt("请输入你的ID");
+	if(loading!=null)
+		{
+			alert("欢迎回来！！！");
+			window.open('https://www.taobao.com/','_top');
+		}
+	else
+		{
+			alert("登陆失败！！！");
+		}
+}
+
+function tuichu() {
+	var canren=confirm("你真的要无情离开吗？商城可是有好东西！！！！！！");
+	if(canren==true)
+	{
+		window.close();
+	}
+}
+</script>
+</head>
+<body>
+	<div id="taoge">
+    	
+    </div>
+    <form id="wang">
+    <input type="button" onClick="denglu()" value="登录商城" >
+    </form>
+     <form id="hong">
+    <input type="button" onClick="tuichu()" value="退出商城" >
+    </form>
+</body>
+</html>
